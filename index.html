@@ -130,8 +130,8 @@
 
   /* stats */
   .stats{ border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:color-mix(in srgb, var(--card) 62%, transparent); }
-  .stats-grid{ max-width:var(--maxw); margin:0 auto; padding:0 28px; display:grid; grid-template-columns:repeat(4,1fr); }
-  @media (max-width:720px){ .stats-grid{ grid-template-columns:repeat(2,1fr); } }
+  .stats-grid{ max-width:var(--maxw); margin:0 auto; padding:0 28px; display:grid; grid-template-columns:repeat(5,1fr); }
+  @media (max-width:720px){ .stats-grid{ grid-template-columns:repeat(2,1fr); } .stats-grid .stat:first-child{ grid-column:span 2; } }
   .stat{ padding:26px 20px 26px 0; }
   .stat .n{ font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:38px; color:var(--accent); line-height:1; }
   .stat .l{ margin-top:6px; font-size:13.5px; color:var(--muted); }
@@ -540,7 +540,7 @@
     <div class="hero-copy">
       <div class="hello">Hi, I'm Shashank.</div>
       <h1 class="headline">I build AI that works in the real world. Then I go <span class="rot mark" id="rot">lift heavy things</span>.</h1>
-      <p class="hero-sub">I'm an AI / ML engineer and data scientist, finishing my master's at Arizona State University this December. I like hard problems, honest measurement, and teams that say what they think.</p>
+      <p class="hero-sub">I'm an AI / ML engineer with 4 years of hands-on experience, finishing my master's at Arizona State University this December. I like hard problems, honest measurement, and teams that say what they think.</p>
       <div class="facts">
         <span class="fact">Grew up in Karnataka, India</span>
         <span class="fact"><i class="live"></i>Tempe, Arizona <b id="clock"></b></span>
@@ -557,6 +557,7 @@
 
 <div class="stats">
   <div class="stats-grid">
+    <div class="stat"><div class="n">4 yrs</div><div class="l">of work experience in AI, Data and Product</div></div>
     <div class="stat"><div class="n">34.1%</div><div class="l">drop in forecast error on my SkyFusion research</div></div>
     <div class="stat"><div class="n">4</div><div class="l">ML systems I've taken to production</div></div>
     <div class="stat"><div class="n">3.78</div><div class="l">GPA in my MS in Data Science</div></div>
@@ -752,11 +753,11 @@
       <div class="step">
         <div class="when">Jun 2025 to now</div>
         <div>
-          <h3>Research Assistant</h3>
-          <div class="where">ASU Photovoltaic Reliability Laboratory, part-time, Arizona</div>
+          <h3>AI Developer</h3>
+          <div class="where">ASU Photovoltaic Reliability Laboratory, part-time, 1 yr 6 mos, Arizona</div>
           <ul class="roles">
-            <li><b>AI Development</b><span>Aug 2026 to present, Mesa, hybrid</span></li>
-            <li><b>Machine Learning</b><span>Jun 2025 to Aug 2026, Tempe</span></li>
+            <li><b>AI Developer</b><span>Aug 2026 to present, Mesa, hybrid</span></li>
+            <li><b>Research Assistant: Machine Learning</b><span>Jun 2025 to Aug 2026, Tempe</span></li>
           </ul>
           <p class="note">I work on short-term solar power forecasting, predicting output 10 minutes ahead with a multi-modal deep learning pipeline that combines sky images, optical flow and weather data. I built the full system, including CNN-GRU image-sequence models and cloud motion extraction, and ran an ablation study comparing weather-only, image-based, flow-based and fully fused models. I benchmark against persistence baselines across seasons and weather conditions, with a focus on cloudy days and sudden ramps.</p>
           <div class="tagrow"><span>Python</span><span>TensorFlow</span><span>Deep learning</span><span>Optical flow</span></div>
